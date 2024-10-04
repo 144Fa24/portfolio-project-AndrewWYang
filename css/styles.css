@@ -1,0 +1,59 @@
+body, header, nav, main, footer, h1, div, img{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: black;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header{
+    width: 25%;
+    float: left;
+}
+
+h1{
+    color: salmon;
+    padding-left: 2em;
+    padding-top: 0.25em;
+}
+
+nav{
+    width: auto;
+    float: none;
+    margin: 1em 2em 1em 2em;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    text-align: right;
+}
+
+nav li{
+    display: inline-block;
+    font-family: Georgia;
+    font-size: 1.5em;
+}
+
+nav li a{
+    display: block;
+    color: darksalmon;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+p, h2{
+    color: white;
+}
+
+footer p{
+    font-size: 0.75em;
+    text-align: center;
+}
