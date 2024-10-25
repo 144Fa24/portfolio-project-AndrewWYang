@@ -5,31 +5,40 @@
   <title>Andrew Yang Portfolio</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/451c1d82c5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    
-  <header>
-    <h1>Andrew Yang</h1>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li> 
-      <li><a href="projects.html">Projects</a></li> 
-      <li><a href="artworks.html">Artworks</a></li> 
-      <li><a href="resume.html">Resume</a></li> 
-      <li><a href="contact.html">Contact</a></li> 
-    </ul>
-  </nav>
+  <!-----------------HEADER---------------->
+  <div id="header">
+    <div id="container">
+      <nav>
+        <a href="index.html" class="logo"><h1>Andrew<span id="y">Y</span></h1></a>
+        <ul id="sidebar">
+          <li><a href="index.html">Home</a></li> 
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>   
+          <li><a href="resume.html">Resume</a></li> 
+          <li><a href="contact.html">Contact</a></li>
+          <li><i class="help fa-solid fa-circle-xmark" onclick="closemenu()"></i></li>
+        </ul>
+        <i class="help fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="help header-text">
+        <p>Digital Media:Visual Imaging</p>
+        <h1>Hey, <br>I'm <span>Andrew Yang</span></h1>
+      </div>
+    </div>
+  </div>
+ <!----->
+  
 
   <!-- Use the main area to add the main content of the webpages -->
-  <main>
-      <!--Hero MAIN img-->
-      <div id="hero">
-      <img src="image/Selfie.jpg" alt="Picture of myself by a lake">
-      </div>
-      
+  <main> 
       <div id="intro">
       <h3>Andrew Yang</h3>
       <p>Welcome! I'm Andrew Yang! I am currently a student at Northwest Missouri State University.
@@ -41,6 +50,17 @@
   <footer>
     <p>&copy; Copyright 2024. All Rights Reserved</p>
   </footer>
+  
+  <script>
+    var sidemenu = document.getElementById("sidebar");
+    
+    function openmenu(){
+      sidemenu.style.right = "0";
+    
+    function closemenu(){
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+  
 </body>
-
 </html>
